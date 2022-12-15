@@ -36,7 +36,7 @@ const BarChart = () => {
                             label: '',
                             data: [easy, medium, hard],
                             borderWidth: 1,
-                            backgroundColor: ["#5FA052", "#EBD4A2", "#CC3366"]
+                            backgroundColor: ["#0080006e", "#fffb003f", "#ff000069"]
                         }]
                     }}
                     options={{

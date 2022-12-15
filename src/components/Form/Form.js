@@ -18,6 +18,8 @@ const Form = ({setEasy, setMedium, setHard}) => {
         setMedium(medium)
         setHard(hard)
 
+        toast.success("Successful")
+
         e.target.reset()
     }
     
