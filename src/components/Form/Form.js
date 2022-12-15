@@ -30,19 +30,19 @@ const Form = ({setEasy, setMedium, setHard}) => {
                     <label className="label">
                         <span className="label-text">Easy</span>
                     </label>
-                    <input type="number" name='easy' placeholder="Type a Number" className="input input-bordered w-full" />
+                    <input type="number" name='easy' placeholder="Type a Number" required className="input input-bordered w-full" />
                 </div>
                 <div className="form-control w-full">
                     <label className="label">
                         <span className="label-text">Medium</span>
                     </label>
-                    <input type="number" name='medium' placeholder="Type a Number" className="input input-bordered w-full" />
+                    <input type="number" name='medium' placeholder="Type a Number" required className="input input-bordered w-full" />
                 </div>
                 <div className="form-control w-full">
                     <label className="label">
                         <span className="label-text">Hard</span>
                     </label>
-                    <input type="number" name='hard' placeholder="Type a Number" className="input input-bordered w-full" />
+                    <input type="number" name='hard' placeholder="Type a Number" required className="input input-bordered w-full" />
                 </div>
                 <button className='btn btn-primary btn-wide sm:w-auto'>Reset</button>
             </form>
