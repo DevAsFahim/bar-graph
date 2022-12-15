@@ -1,0 +1,28 @@
+.graph_container {
+    width: 500px;
+    margin: 0 auto 50px;
+}
+
+.form_container {
+    width: 1000px;
+    margin: auto;
+}
+
+@media screen and (max-width: 1020px) {
+    .form_container {
+        width: 80%;
+        padding: 0 20px;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 700px) {
+    .form_container {
+        width: 100%;
+    }
+    .form_container form {
+        flex-wrap: wrap;
+    }
+    .graph_container {
+        width: 100%;
+    }
+}

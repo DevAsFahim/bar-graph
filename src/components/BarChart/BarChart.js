@@ -9,6 +9,7 @@ import {
     Tooltip,
     Legend,
 } from 'chart.js';
+import Form from '../Form/Form';
 
 ChartJS.register(
     CategoryScale,
@@ -22,20 +23,20 @@ ChartJS.register(
 
 const BarChart = () => {
     const [easy, setEasy] = useState(40)    
-    const [medium, metMedium] = useState(80)    
+    const [medium, setMedium] = useState(80)    
     const [hard, setHard] = useState(60)    
     
     return (
         <div>
-            <div style={{ width: "500px", margin: "auto" }}>
+            <div className="graph_container">
                 <Bar
                     data={{
                         labels: ['Easy', 'Medium', 'Hard'],
                         datasets: [{
                             label: '',
-                            data: [20, 90, 30],
+                            data: [easy, medium, hard],
                             borderWidth: 1,
-                            backgroundColor: ["green", "yellow", "red"]
+                            backgroundColor: ["#5FA052", "#EBD4A2", "#CC3366"]
                         }]
                     }}
                     options={{
@@ -50,6 +51,12 @@ const BarChart = () => {
                     width={500}
                 />
             </div>
+
+            <Form 
+                setEasy={setEasy}
+                setMedium={setMedium}
+                setHard={setHard}
+            ></Form>
         </div>
     );
 };
